@@ -18,8 +18,8 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version-file: 'path/to/go.mod'
-          
+          go-version-file: 'md-converter/go.mod'
+
       - name: Markdown Convert
         run: cd md-converter; go run main.go -d ../content/past
 
