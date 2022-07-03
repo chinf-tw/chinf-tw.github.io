@@ -15,6 +15,10 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      - name: Markdown Convert
+        use: actions/setup-go@v3
+        run: cd md-converter; go run main.go -d ../content/past
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
