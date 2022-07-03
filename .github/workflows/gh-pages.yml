@@ -15,10 +15,12 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Markdown Convert
+      - name: Setup go
         uses: actions/setup-go@v3
         with:
           go-version-file: 'path/to/go.mod'
+          
+      - name: Markdown Convert
         run: cd md-converter; go run main.go -d ../content/past
 
       - name: Setup Hugo
