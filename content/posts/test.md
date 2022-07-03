@@ -5,6 +5,7 @@ tags:
   - prove
   - math
   - null space
+
 math: true
 ---
 
@@ -22,7 +23,7 @@ $$
 如果 $\mathbf{A}$ 為 $\mathbf{B}$ 的子集，代表著 $\forall a \in \mathbf{A}$ 且 $a \in \mathbf{B}$，知道要證明兩集合相等需要的子證明後，回到原本要證明的題目，該題目要證明的是兩個零空間集合相等，在證明之前先介紹零空間的定義：
 
 $$
-\text{N}(\mathbf{A})=\left\{ \vec{x}\  \middle| \ \mathbf{A}\vec{x}=\vec{0} \right\}
+\text{N}(\mathbf{A})=\left\\{ \vec{x}\\  \middle| \\ \mathbf{A}\vec{x}=\vec{0} \right\\}
 $$
 
 ### 補充
@@ -38,10 +39,10 @@ $$
 
 $$
 \begin{aligned}
-  \forall \vec{u} \in \text{N}(\mathbf{A}^{\mathrm{T}}\mathbf{A})&,\ \mathbf{A}^{\mathrm{T}}\mathbf{A}\vec{u}=\vec{0} \\
-  \vec{u}^{\mathrm{T}}\mathbf{A}^\mathrm{T}\mathbf{A}\vec{u}&=\vec{u}^{\mathrm{T}}\vec{0}=0 \\
-  (\mathbf{A}\vec{u})^\mathrm{T}\mathbf{A}\vec{u}&=0 \\
-  \mathbf{A}\vec{u}&=\vec{0} \\
+  \forall \vec{u} \in \text{N}(\mathbf{A}^{\mathrm{T}}\mathbf{A})&,\\ \mathbf{A}^{\mathrm{T}}\mathbf{A}\vec{u}=\vec{0} \\\
+  \vec{u}^{\mathrm{T}}\mathbf{A}^\mathrm{T}\mathbf{A}\vec{u}&=\vec{u}^{\mathrm{T}}\vec{0}=0 \\\
+  (\mathbf{A}\vec{u})^\mathrm{T}\mathbf{A}\vec{u}&=0 \\\
+  \mathbf{A}\vec{u}&=\vec{0} \\\
   \therefore \text{N}(\mathbf{A}^{\mathrm{T}}\mathbf{A}) &\subseteq \text{N}(\mathbf{A})
 \end{aligned}
 $$
@@ -50,9 +51,9 @@ $$
 
 $$
 \begin{aligned}
-  \forall \vec{u} \in \text{N}(\mathbf{A})&,\ \mathbf{A}\vec{u}=\vec{0} \\
-  \mathbf{A}^\mathrm{T}\mathbf{A}\vec{u}&=\mathbf{A}^\mathrm{T}\vec{0}=\vec{0} \\
-  \mathbf{A}^\mathrm{T}\mathbf{A}\vec{u}&=\vec{0} \\
+  \forall \vec{u} \in \text{N}(\mathbf{A})&,\\ \mathbf{A}\vec{u}=\vec{0} \\\
+  \mathbf{A}^\mathrm{T}\mathbf{A}\vec{u}&=\mathbf{A}^\mathrm{T}\vec{0}=\vec{0} \\\
+  \mathbf{A}^\mathrm{T}\mathbf{A}\vec{u}&=\vec{0} \\\
   \therefore \text{N}(\mathbf{A}) &\subseteq \text{N}(\mathbf{A}^{\mathrm{T}}\mathbf{A})
 \end{aligned}
 $$
