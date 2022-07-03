@@ -17,6 +17,8 @@ jobs:
 
       - name: Markdown Convert
         uses: actions/setup-go@v3
+        with:
+          go-version-file: 'path/to/go.mod'
         run: cd md-converter; go run main.go -d ../content/past
 
       - name: Setup Hugo
