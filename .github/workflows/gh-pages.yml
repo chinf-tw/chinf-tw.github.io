@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Markdown Convert
-        use: actions/setup-go@v3
+        uses: actions/setup-go@v3
         run: cd md-converter; go run main.go -d ../content/past
 
       - name: Setup Hugo
