@@ -1,7 +1,7 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
-[submodule "content/past"]
+[submodule "content/post"]
 	path = content/past
 	url = git@github.com:chinf-tw/Article.git
 [submodule "md-converter"]

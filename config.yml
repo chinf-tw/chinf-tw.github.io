@@ -1,0 +1,37 @@
+baseURL: "https://chinf-tw.github.io"
+languageCode: "zh-TW"
+title: "Chinf Hung"
+theme: "PaperMod"
+
+params:
+    homeInfoParams:
+        Title: "Chinf Hung の Research Space"
+        Content: "此為 Chinf 的研究小空間，以論文導讀、數學推導以及程式相關的內容為主。"
+
+    profileMode:
+        enabled: false
+        title: "Chinf Hung の Space"
+        subtitle: "ExampleSite description"
+        imageUrl: "https://avatars.githubusercontent.com/u/30841418?v=4"
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: "my image"
+    socialIcons: # optional
+        - name: Github
+          url: "https://github.com/chinf-tw"
+        - name: CodePen
+          url: "https://codepen.io/chinf-tw"
+menu:
+    main:
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
+        - identifier: archives
+          name: archives
+          url: /archives/
+          weight: 30
